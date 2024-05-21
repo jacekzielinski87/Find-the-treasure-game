@@ -5,6 +5,21 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.title {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+}
+
+.logo {
+    position: absolute;
+    left:400px;
+    top:10px;
+    z-index: 1;
+}
+
 .board {
     width:600px;
     background: #0e0d0d;
