@@ -1,0 +1,37 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.board {
+    width:600px;
+    background: #0e0d0d;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4,80px);
+    grid-gap:6px;
+    display: grid;
+    border:1px solid #100f0f;
+    cursor:pointer;
+    position: absolute;
+    left:50px;
+    right:50px;
+    padding: 4px;
+    margin-top: 24px;
+}
+
+.box {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background: #f1eeee;
+}
+
+.treasure {
+    display: block;
+}
