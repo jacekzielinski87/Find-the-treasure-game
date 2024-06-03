@@ -1,18 +1,15 @@
-*{
+
+
+body {
+    background-image: url("./bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding:0;
     margin:0;
     box-sizing: border-box;
-    background-color: #000000;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.title {
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:50px;
-}
 
 .logo {
     position: absolute;
@@ -22,7 +19,7 @@
 }
 
 .board {
-    width:600px;
+    width:750px;
     background: #0e0d0d;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4,80px);
@@ -35,7 +32,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding:4px;
-    
 }
 
 .box {
@@ -43,11 +39,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f1da07;
 }
 
-.box:hover {
-    background: #f1eeee;
-}
+
 
 .treasure {
     display:none;
@@ -62,7 +57,20 @@
     cursor:pointer;
 }
 
+.this {
+    width: 75px;
+    height:50px;
+    background-color:rgb(255, 255, 255);
+    color:#000000;
+    font-weight: 600;
+    cursor:pointer;
+}
+
 .click:hover {
+    background: #e74315;
+}
+
+.this:hover {
     background: #e74315;
 }
 
@@ -71,17 +79,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#f8f8f8;
+    color:#0f0e0e;
     font-size: 2rem;
     margin:0 auto;
     padding: 4px;
     margin-top: 100px;
-    border:4px solid #FFB3CB;
+    border:4px solid #111010;
     border-radius: 8px;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: none;
 }
 
 .start:hover {
-    background: #FFB3CB;
+    background: #ddc917;
 }
